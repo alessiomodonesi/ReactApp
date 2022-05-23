@@ -1,0 +1,60 @@
+.parallax-P {
+  font-size: 5vw;
+}
+
+.parallax-new {
+  margin: 6vw;
+  padding-bottom: 6vw;
+}
+
+.items-img {
+  width: 25vw !important;
+  height: auto;
+  margin-left: -16vw;
+  border-radius: 2vw;
+  margin-top: 4vw;
+}
+
+.col-btn {
+  margin-left: 18vw;
+  margin-top: 2.5vw;
+}
+
+.btn-items {
+  width: 10vw !important;
+  height: auto;
+  background-color: #dfc464 !important;
+  border-color: #bea445 !important;
+  color: white !important;
+  font-size: 1.3vw !important;
+}
+
+.parallax-user1 {
+  margin-left: 30vw;
+}
+
+.parallax-user2 {
+  margin-left: 34vw;
+}
+
+.signup-img {
+  width: 25vw !important;
+  height: auto;
+  margin-left: 10vw;
+  border-radius: 2vw;
+  margin-top: 4vw;
+}
+
+.col-login {
+  margin-left: 55vw;
+  margin-top: 5vw;
+}
+
+.btn-login {
+  width: 10vw !important;
+  height: auto;
+  background-color: #dfc464 !important;
+  border-color: #bea445 !important;
+  color: white !important;
+  font-size: 1.3vw !important;
+}

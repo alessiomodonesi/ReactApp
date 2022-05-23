@@ -1,0 +1,12 @@
+.h-title {
+    text-align: center;
+}
+
+.col-3 {
+    text-align: center;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    background-color: #f1edf4 !important;
+    border-radius: 10px !important;
+    margin-left: 37vw;
+    margin-top: 8vw;
+}

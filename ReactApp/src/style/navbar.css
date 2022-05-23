@@ -1,0 +1,26 @@
+nav {
+    background-image: linear-gradient(to bottom, #cd19e9, #cd72fc, #d4a7ff, #e4d5ff, #ffffff) !important;
+}
+
+.nav-logo {
+    width: 7vw;
+    margin-left: 1vw;
+}
+
+.nav-user {
+    width: 2.5vw;
+    margin-right: 1vw;
+}
+
+.nav-item {
+    width: 2.5vw;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.nav-carrello {
+    width: 2.5vw;
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+}
