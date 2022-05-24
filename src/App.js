@@ -5,7 +5,7 @@ import Login from './pages/login';
 import Carrello from './pages/carrello';
 import Items from './pages/items';
 import Navbar from './components/navbar';
-import ParallaxSection from './components/parallax'
+import ParallaxSection from './components/parallax';
 //import Footer from './components/footer';
 
 import './App.css';
@@ -24,8 +24,8 @@ class App extends Component {
               <Route exact path="/carrello" element={<Carrello />} />
             </Routes>
           </div>
-          { /*<Footer />*/ }
         </BrowserRouter>
+        { /*<Footer />*/}
       </>
     );
   }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
-import logo from '../images/logo.png';
-import user from '../images/user.png';
-import carrello from '../images/carrello.png'
-import items from '../images/items.png'
+import logo from '../images/navbar/logo.png';
+import user from '../images/navbar/user.png';
+import carrello from '../images/navbar/carrello.png'
+import items from '../images/navbar/items.png'
 
 import '../style/navbar.css';
 

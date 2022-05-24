@@ -9,6 +9,7 @@ class Items extends Component {
                 <div className="App container-fluid">
                     <ItemList />
                 </div>
+                
             </>
         )
     }

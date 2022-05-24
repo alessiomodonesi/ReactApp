@@ -12,5 +12,4 @@ class Carrello extends Component {
         )
     }
 };
-
 export default Carrello;

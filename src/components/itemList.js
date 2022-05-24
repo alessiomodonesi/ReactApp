@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Box from './box';
-
-import item from '../images/item.png';
+import item from '../images/items/restock.png';
 
 class ItemList extends Component {
     state = {
@@ -14,8 +13,7 @@ class ItemList extends Component {
             { id : 5, nome: "Item", prezzo: 10, image: item},
             { id : 6, nome: "Item", prezzo: 10, image: item},
             { id : 7, nome: "Item", prezzo: 10, image: item},
-        ],
-
+        ]
     }
   render() {
     return (

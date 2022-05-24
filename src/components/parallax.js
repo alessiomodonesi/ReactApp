@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Link } from "react-router-dom";
+import FlipCard1 from './flipCard1';
+import FlipCard2 from './flipCard2';
 
-import items from '../images/e-commerce.jpg';
-import signup from '../images/signup.jpg';
 import '../style/parallax.css';
 
 class ParallaxSection extends Component {
@@ -18,14 +18,14 @@ class ParallaxSection extends Component {
                     </ParallaxLayer>
 
                     <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#cd72fc' }} />
-                    <ParallaxLayer offset={1} speed={1} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
+                    <ParallaxLayer offset={1} speed={1.5} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-10">
                                     <p className="parallax-P parallax-new">Scopri i nostri prodotti</p>
                                 </div>
                                 <div className="col-2">
-                                    <img src={items} className="items-img" alt="..." />
+                                    <FlipCard1 />
                                 </div>
                             </div>
                             <div className="row">
@@ -37,20 +37,20 @@ class ParallaxSection extends Component {
                     </ParallaxLayer>
 
                     <ParallaxLayer offset={2} speed={2} style={{ backgroundColor: '#cd72fc' }} />
-                    <ParallaxLayer offset={2} speed={2} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
+                    <ParallaxLayer offset={2} speed={2.5} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-2">
-                                    <img src={signup} className="signup-img" alt="..." />
+                                    <FlipCard2 />
                                 </div>
                                 <div className="col-10">
-                                    <p className="parallax-P parallax-user1">Accedi alla pagina</p>
-                                    <p className="parallax-P parallax-user2">e unisciti a noi</p>
+                                    <p className="parallax-P parallax-user1">Registrati e</p>
+                                    <p className="parallax-P parallax-user2">unisciti a noi</p>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-3 col-login">
-                                    <Link to="/Login" className="btn btn-login">Accedi</Link>
+                                    <Link to="/Login" className="btn btn-login">Login</Link>
                                 </div>
                             </div>
                         </div>
