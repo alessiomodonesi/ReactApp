@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Box from './box';
+import Box from './Box';
 import item from '../images/items/restock.png';
 
 class ItemList extends Component {
@@ -18,7 +18,7 @@ class ItemList extends Component {
   render() {
     return (
         <div className="row">
-            {this.state.boxes.map(box => (
+            { this.state.boxes.map(box => (
                 <Box
                     key={box.id}
                     box={box}

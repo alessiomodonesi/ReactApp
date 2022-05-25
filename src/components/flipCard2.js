@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSpring, a } from '@react-spring/web'
 
-import styles from '../style/flipCard2.module.css'
+import styles from '../style/FlipCard2.module.css'
 
 export default function FlipCard2() {
   const [flipped, set] = useState(false)

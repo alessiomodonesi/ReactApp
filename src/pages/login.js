@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import '../style/login.css';
+import '../style/Login.css';
 
 class Login extends Component {
     render() {
         return (
             <>
-                <div className="App container-fluid">
-                    <br /><h2 className="h-title">Login</h2><hr />
-                    <div className="col-3">
-                        <div className="row">
+                <div className="App container-fluid d-flex justify-content-center">
+                    <div className="col-4">
+                        <div className="row row-title text-center">
+                            <h1>Login</h1>
+                        </div>
+                        <div className="row row-login">
                             <form>
                                 <div className="mb-3">
                                     <label className="form-label">Email/Username</label>
@@ -24,7 +26,7 @@ class Login extends Component {
                                         className="form-control"
                                     />
                                 </div>
-                                <button type="submit" className="btn btn-primary btn-accedi">Accedi</button>
+                                <button type="button" className="btn btn-outline-success btn-accedi" onClick="">Accedi</button>
                             </form>
                         </div>
                     </div>

@@ -1,11 +1,21 @@
-.h-title {
-    text-align: center;
-}
-.col-3 {
+.row-login {
     text-align: center;
     padding: 1.5vw 2vw 1.5vw 2vw;
     background-color: #f1edf4 !important;
-    border-radius: 10px !important;
-    margin-left: 37vw;
-    margin-top: 8vw;
+    border-radius: 1vw !important;
+    margin-top: 5vw;
+}
+.btn-accedi {
+    margin-top: 1vw;
+    width: 7.5vw !important;
+    height: auto;
+    font-size: 1.1vw !important;
+    background-color: green!important;
+    color: white !important;
+}
+.form-label {
+    font-size: 1vw;
+}
+.row-title {
+    margin-top: 1vw;
 }

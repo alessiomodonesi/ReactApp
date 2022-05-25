@@ -6,7 +6,7 @@ import user from '../images/navbar/user.png';
 import carrello from '../images/navbar/carrello.png'
 import items from '../images/navbar/items.png'
 
-import '../style/navbar.css';
+import '../style/Navbar.css';
 
 class Navbar extends Component {
   render() {
@@ -24,7 +24,7 @@ class Navbar extends Component {
                 </Link>
               </div>
               <div className="col">
-                <Link to="/items" className="navbar-link">
+                <Link to="/Shop" className="navbar-link">
                   <img src={items} alt="..." className="nav-item" />
                 </Link>
               </div>

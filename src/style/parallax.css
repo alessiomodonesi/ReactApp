@@ -1,39 +1,65 @@
+/*PRIMA SLIDE*/
 .parallax-P {
   font-size: 5vw;
 }
 .parallax-new {
   margin: 5vw;
   margin-top: -10vw;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 .col-btn {
+  text-align: center;
+  border-radius: 10vw;
   margin-top: 5vw;
   margin-left: 18vw;
+  background-color: white;
+  padding: 1.5vw;
 }
 .btn-items {
   width: 10vw !important;
   height: auto;
   font-size: 1.3vw !important;
-  background-color: #dfc464 !important;
-  border-color: #bea445 !important;
+  border-radius: 0.5vw;
   color: white !important;
+  background-color: green !important;
 }
 
+/*SECONDA SLIDE*/
 .parallax-user1 {
   margin-top: -6vw;
   margin-left: 35.5vw;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 .parallax-user2 {
   margin-left: 34vw;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 .col-login {
   margin-top: 5vw;
   margin-left: 53vw;
+  text-align: center;
+  border-radius: 10vw;
+  margin-top: 5vw;
+  margin-right: 18vw;
+  background-color: white;
+  padding: 1.5vw;
 }
 .btn-login {
   width: 10vw !important;
   height: auto;
   font-size: 1.3vw !important;
-  background-color: #dfc464 !important;
-  border-color: #bea445 !important;
+  border-radius: 0.5vw;
   color: white !important;
+  background-color: green !important;
+}
+.hr-style1, .hr-style2 {
+  border: 10px solid white !important; 
+  border-radius: 5px;
+  width: 63vw;
+}
+.hr-style1 {
+  margin-left: 0.5vw;
+}
+.hr-style2 {
+  margin-left: 17.75vw;
 }

@@ -1,6 +1,9 @@
 .footer {
-    background-image: linear-gradient(to top, #cd19e9, #cd72fc, #d4a7ff, #e4d5ff, #ffffff);
-    color: black;
+    background: #0FFF01;
+    background: -webkit-linear-gradient(bottom, #0FFF01, #74FF39);
+    background: -moz-linear-gradient(bottom, #0FFF01, #74FF39);
+    background: linear-gradient(to top, #0FFF01, #74FF39);
+    color: white;
     margin-top: 46vw;
     padding: 1vw;
 }

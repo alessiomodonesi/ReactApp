@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../style/box.css';
+import '../style/Box.css';
 
 class Box extends Component {
     render() {
@@ -11,9 +11,9 @@ class Box extends Component {
                       <h5 className="box-nome">{this.props.box.nome}</h5>
                       <p className="box-prezzo">{this.props.box.prezzo} €</p>
                       <div className="row justify-content-around">
-                          <button className="btn btn-primary btn-compra">Compra</button>
+                          <button type="button" className="btn btn-outline-success btn-acquista">Acquista</button>
                           <br></br>
-                          <button className="btn btn-primary btn-carrello">Aggiungi al carrello</button>
+                          <button className="btn btn-primary btn-carrello">Carrello</button>
                       </div>
                   </div>
               </div>

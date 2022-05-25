@@ -12,12 +12,13 @@
   margin-bottom: 1vw;
   margin-top: 1vw;
 }
-.btn-compra {
-  background-color: #9bc43d !important;
-  border: #80a52a !important;
+.btn-acquista {
+  background-color: green !important;
 }
-.btn-compra, .btn-carrello {
-  width: 6vw !important;
+.btn-acquista, .btn-carrello {
+  font-size: 0.9vw;
+  width: 5vw !important;
+  height: auto;
   border-radius: 12px !important;
   color: white;
   margin: 1vw;
