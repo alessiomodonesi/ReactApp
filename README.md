@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+##### Alessio Modonesi 4^F
+# React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Per il mio progetto di fine anno ho scelto la libreria javascript [React]. 
+Questo è un ambiente di sviluppo semplice da usare ma, allo stesso tempo, molto completo.
 
-## Available Scripts
+## Creare un progetto React
+Per poter creare da zero un nuovo progetto con React, è innanzitutto necessario installare
+[Node.js], che è alla base di molti framework js come, ad esempio, [Vue.js].
+Per poter installare Node, accediamo alla pagina di [download] ufficiale del sito e scarichiamo
+la versione corretta per il nostro SO.
+Una volta scaricato Node sul nostro PC, aprimiamo un CMD e creiamo la nostra pagina React:
 
-In the project directory, you can run:
+```sh
+npx create-react-app react-app
+cd react-app
+npm start
+```
+Utilizzando questi comandi, apriremo anche la pagina appena creata in localhost all'interno
+di una finestra sul nostro browser.
 
-### `npm start`
+```sh
+http://localhost:3000
+```
+Una volta aperta la nostra pagina, possiamo metterci al lavoro per creare quello che vogliamo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Come funziona
+Da quel che ho potuto sperimentare, React si basa sull'implementazione di componenti che possono
+essere aggiunti in ogni parte di una pagina.
+Questi componenti possono essere importati in ogni pagina, con la seguente sintassi:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+import Navbar from '../components/Navbar';
+```
+Da qui un altro passo fondamentale: all'inizio di ogni pagina.js, dobbiamo importare tutto quello
+di cui abbiamo bisogno. Per esempio, nella pagina [App.js] del mio progetto, ho utilizzato la 
+seguente sintassi:
 
-### `npm test`
+```sh
+import React, { Component } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+```
+La precedente sintassi è composta da funzioni o classi da importare e dal percorso in cui si trovano,
+dopo la parola chiave "from".
+Il primo import è il più importante, in quanto richiama in namespace "React" e la classe "Component" 
+direttamente dal Node Module di nome 'react'.
+Il secondo import inserisce invece le funzioni per inserire le route dei vari components, dal module "react-router-dom",
+che va opportunamente scaricato.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+class App extends Component {
+  render() {
+    return (
+      <>
+        <BrowserRouter>
+          <Navbar />
+          <div className="App container-fluid d-flex justify-content-center">
+            <Routes>
+              <Route exact path="/" element={<ParallaxSection />} />
+              <Route exact path="/Login" element={<Login />} />
+              <Route exact path="/Shop" element={<Shop />} />
+              <Route exact path="/Carrello" element={<Carrello />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </>
+    );
+  }
+}
+export default App;
+```
+Da qui sopra possiamo vedere la classe App, che ritorna il component [Navbar] e da la rotta per tutte le pagine.
+L'unica rotta a non avere un path è "ParallaxSection", in quanto va inserita direttamente nella schermata principale.
+Alla fine della classe, si deve esportare quelle che si è creato precedentemente; in questo caso la classe.
 
-### `npm run build`
+> NB: è possibile fare solo un `export default` per ogni pagina.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## React-spring
+Ho poi deciso di implementare la libreria [React-spring], che contiene diverse funzione interessanti.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm install react-spring
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Il mio progetto
+Per quanto riguarda il mio progetto, ho deciso di creare una pagina di e-commerce,
+similare ad un comune [Amazon].
+L'idea di base comprende una home page di presentazione del sito, una pagina di login e/o registrazione,
+la pagina dedicata alla shopping e infine il carrello, dove poter rivedere gli oggetti prima di acquistarli.
 
-### `npm run eject`
+| Page | Descrizione |
+| ------ | ------ |
+| [App.js] | Dove vado ad inserire la route dei vari components |
+| [Carrello.js] | Dove poter rivedere gli oggetti prima di acquistarli |
+| [Login.js] | Login e/o registrazione |
+| [Shop.js] | Dove poter vedere tutti gli oggetti offerti dal sito |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Alessio Modonesi
+Email: alessio.modonesi@iisviolamarchesini.edu.it
+Creato con [Dillinger]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[React]: <https://it.reactjs.org>
+[Node.js]: <https://nodejs.org/it>
+[Vue.js]: <https://vuejs.org>
+[download]: <https://nodejs.org/it/download>
+[Amazon]: <https://www.amazon.it>
+[App.js]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/pages/App.js>
+[Carrello.js]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/pages/carrello.js>
+[Login.js]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/pages/login.js>
+[Shop.js]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/pages/Shop.js>
+[React-spring]: <https://react-spring.io>
+[Navbar]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/components/navbar.js>
+[Dillinger]: <https://dillinger.io>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
