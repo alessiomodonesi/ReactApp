@@ -10,9 +10,9 @@ import {
 
 import Box from './Box';
 import item from '../images/items/restock.png';
-import styles from '../style/Chain1.module.css'
+import styles from '../style/Chain4.module.css'
 
-export default function Chain1() {
+export default function Chain4() {
   let items = {
     boxes: [
       { id: 0, nome: "Item", prezzo: 10, image: item },

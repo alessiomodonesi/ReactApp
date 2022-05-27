@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Link } from "react-router-dom";
+
+import TitleChain1 from './TitleChain1';
+import TitleChain2 from './TitleChain2';
+import TitleChain3 from './TitleChain3';
 import FlipCard1 from './FlipCard1';
 import FlipCard2 from './FlipCard2';
 
@@ -22,7 +26,9 @@ class ParallaxSection extends Component {
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-10">
-                                    <p className="parallax-P parallax-new">Scopri i nostri prodotti</p>
+                                    <p className="parallax-P parallax-new">
+                                        <TitleChain1 />
+                                    </p>
                                     <hr className="hr-style1" />
                                 </div>
                                 <div className="col-2">
@@ -45,8 +51,12 @@ class ParallaxSection extends Component {
                                     <FlipCard2 />
                                 </div>
                                 <div className="col-10">
-                                    <p className="parallax-P parallax-user1">Registrati e</p>
-                                    <p className="parallax-P parallax-user2">unisciti a noi</p>
+                                    <p className="parallax-P parallax-user1">
+                                        <TitleChain2 />
+                                    </p>
+                                    <p className="parallax-P parallax-user2">
+                                        <TitleChain3 />
+                                    </p>
                                     <hr className="hr-style2" />
                                 </div>
                             </div>

@@ -4,7 +4,7 @@ import '../style/Box.css';
 class Box extends Component {
     render() {
       return (
-          <div className="col">
+          <div className="col-3">
               <div className="box">
                   <img src={this.props.box.image} className="box-img" alt="..." />
                   <div className="box-body">
