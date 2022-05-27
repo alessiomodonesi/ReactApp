@@ -96,8 +96,6 @@ la pagina dedicata alla shopping e infine il carrello, dove poter rivedere gli o
 | [Shop.js] | Dove poter vedere tutti gli oggetti offerti dal sito |
 
 Alessio Modonesi
-Email: alessio.modonesi@iisviolamarchesini.edu.it
-Creato con [Dillinger]
 
 [React]: <https://it.reactjs.org>
 [Node.js]: <https://nodejs.org/it>
