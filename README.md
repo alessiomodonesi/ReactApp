@@ -108,5 +108,3 @@ Alessio Modonesi
 [Shop.js]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/pages/Shop.js>
 [React-spring]: <https://react-spring.io>
 [Navbar]: <https://github.com/alessiomodonesi/ReactApp/blob/main/src/components/navbar.js>
-[Dillinger]: <https://dillinger.io>
-
